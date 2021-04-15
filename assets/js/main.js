@@ -71,8 +71,8 @@ const alumnosL = alumnos.filter((alumnoL)=>{
 console.log("6. Alumnos que empiezan con L: ", alumnosL)
 
 // 7. Obtener un array agregando una propiedad/key/atributo más a cada elemento usando .map()
-alumnos.map(function(index, element){
-    index.carrera = "Multimedia";
+const alumnosnuevoattribute = alumnos.map((alumno) =>{
+   return {...alumno, carrera:'Multimedia'}
 })
 console.log("7. Agregarle un atributo", alumnos);
 

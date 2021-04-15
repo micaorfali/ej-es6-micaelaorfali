@@ -64,6 +64,12 @@ const [sofi] = alumnos
 const sofia = sofi.nombre;
 console.log("4. primera alumna: ", sofi, sofia);
 
+// otra forma, mas correcta
+const primeralumno = (alumno)=>{
+    const {nombre, edad} = alumno;
+    return `Mi nombre es ${nombre} y tengo ${edad} años`
+}
+
 // 6. Obtener un array con aquellos alumnos que empiezan con la letra "L", usando .filter()
 const alumnosL = alumnos.filter((alumnoL)=>{
     return alumnoL.nombre[0] === 'L' 
